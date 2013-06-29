@@ -1,0 +1,349 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+  <External>null</External>
+	<External>nil</External>
+	<Item class="Frame" referent="RBX0">
+		<Properties>
+			<bool name="Active">false</bool>
+			<Color3 name="BackgroundColor3">4294967295</Color3>
+			<float name="BackgroundTransparency">0.800000012</float>
+			<Color3 name="BorderColor3">4278190080</Color3>
+			<int name="BorderSizePixel">0</int>
+			<string name="Name">SvInfMax</string>
+			<UDim2 name="Position">
+				<XS>1</XS>
+				<XO>-150</XO>
+				<YS>1</YS>
+				<YO>-59</YO>
+			</UDim2>
+			<UDim2 name="Size">
+				<XS>0</XS>
+				<XO>140</XO>
+				<YS>0</YS>
+				<YO>48</YO>
+			</UDim2>
+			<token name="SizeConstraint">0</token>
+			<token name="Style">0</token>
+			<bool name="Visible">true</bool>
+			<int name="ZIndex">1</int>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="TextLabel" referent="RBX1">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4294967295</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4278190080</Color3>
+				<int name="BorderSizePixel">1</int>
+				<token name="Font">2</token>
+				<token name="FontSize">6</token>
+				<string name="Name">TextLabel</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>0</XO>
+					<YS>0</YS>
+					<YO>0</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>1</XS>
+					<XO>0</XO>
+					<YS>0</YS>
+					<YO>16</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<string name="Text">Server Info</string>
+				<Color3 name="TextColor3">4278190080</Color3>
+				<float name="TextTransparency">0</float>
+				<bool name="TextWrap">false</bool>
+				<token name="TextXAlignment">2</token>
+				<token name="TextYAlignment">1</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="Frame" referent="RBX2">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4278190080</Color3>
+				<float name="BackgroundTransparency">0</float>
+				<Color3 name="BorderColor3">4278190080</Color3>
+				<int name="BorderSizePixel">0</int>
+				<string name="Name">Frame</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>0</XO>
+					<YS>0</YS>
+					<YO>16</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>1</XS>
+					<XO>0</XO>
+					<YS>0</YS>
+					<YO>1</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<token name="Style">0</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="TextLabel" referent="RBX3">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4288914085</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<token name="Font">1</token>
+				<token name="FontSize">4</token>
+				<string name="Name">TextLabel</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>8</XO>
+					<YS>0</YS>
+					<YO>20</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>0</XS>
+					<XO>22</XO>
+					<YS>0</YS>
+					<YO>12</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<string name="Text">URI:</string>
+				<Color3 name="TextColor3">4278190080</Color3>
+				<float name="TextTransparency">0</float>
+				<bool name="TextWrap">false</bool>
+				<token name="TextXAlignment">1</token>
+				<token name="TextYAlignment">1</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="TextLabel" referent="RBX4">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4288914085</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<token name="Font">1</token>
+				<token name="FontSize">4</token>
+				<string name="Name">TextLabel</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>8</XO>
+					<YS>0</YS>
+					<YO>34</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>0</XS>
+					<XO>22</XO>
+					<YS>0</YS>
+					<YO>12</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<string name="Text">Port:</string>
+				<Color3 name="TextColor3">4278190080</Color3>
+				<float name="TextTransparency">0</float>
+				<bool name="TextWrap">false</bool>
+				<token name="TextXAlignment">1</token>
+				<token name="TextYAlignment">1</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="TextLabel" referent="RBX5">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4288914085</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<token name="Font">1</token>
+				<token name="FontSize">4</token>
+				<string name="Name">PortValue</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>34</XO>
+					<YS>0</YS>
+					<YO>34</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>1</XS>
+					<XO>-42</XO>
+					<YS>0</YS>
+					<YO>12</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<string name="Text">65535</string>
+				<Color3 name="TextColor3">4278190080</Color3>
+				<float name="TextTransparency">0</float>
+				<bool name="TextWrap">false</bool>
+				<token name="TextXAlignment">0</token>
+				<token name="TextYAlignment">1</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="TextLabel" referent="RBX6">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4288914085</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<token name="Font">1</token>
+				<token name="FontSize">4</token>
+				<string name="Name">URIValue</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>34</XO>
+					<YS>0</YS>
+					<YO>20</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>1</XS>
+					<XO>-42</XO>
+					<YS>0</YS>
+					<YO>12</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<string name="Text">255.255.255.255</string>
+				<Color3 name="TextColor3">4278190080</Color3>
+				<float name="TextTransparency">0</float>
+				<bool name="TextWrap">false</bool>
+				<token name="TextXAlignment">0</token>
+				<token name="TextYAlignment">1</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="ImageButton" referent="RBX7">
+			<Properties>
+				<bool name="Active">true</bool>
+				<bool name="AutoButtonColor">false</bool>
+				<Color3 name="BackgroundColor3">4288914085</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<Content name="Image"><url>rbxasset://rpui//images//arrowIn.png</url></Content>
+				<string name="Name">InButton</string>
+				<UDim2 name="Position">
+					<XS>1</XS>
+					<XO>-18</XO>
+					<YS>0</YS>
+					<YO>0</YO>
+				</UDim2>
+				<bool name="Selected">false</bool>
+				<UDim2 name="Size">
+					<XS>0</XS>
+					<XO>16</XO>
+					<YS>0</YS>
+					<YO>16</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<token name="Style">0</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="Frame" referent="RBX8">
+		<Properties>
+			<bool name="Active">false</bool>
+			<Color3 name="BackgroundColor3">4294967295</Color3>
+			<float name="BackgroundTransparency">0.800000012</float>
+			<Color3 name="BorderColor3">4278190080</Color3>
+			<int name="BorderSizePixel">0</int>
+			<string name="Name">SvInfMin</string>
+			<UDim2 name="Position">
+				<XS>1</XS>
+				<XO>-122</XO>
+				<YS>1</YS>
+				<YO>-27</YO>
+			</UDim2>
+			<UDim2 name="Size">
+				<XS>0</XS>
+				<XO>112</XO>
+				<YS>0</YS>
+				<YO>16</YO>
+			</UDim2>
+			<token name="SizeConstraint">0</token>
+			<token name="Style">0</token>
+			<bool name="Visible">true</bool>
+			<int name="ZIndex">1</int>
+			<bool name="archivable">true</bool>
+		</Properties>
+		<Item class="ImageButton" referent="RBX9">
+			<Properties>
+				<bool name="Active">true</bool>
+				<bool name="AutoButtonColor">false</bool>
+				<Color3 name="BackgroundColor3">4288914085</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4279970357</Color3>
+				<int name="BorderSizePixel">1</int>
+				<Content name="Image"><url>rbxasset://rpui//images//arrowOut.png</url></Content>
+				<string name="Name">OutButton</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>2</XO>
+					<YS>0</YS>
+					<YO>0</YO>
+				</UDim2>
+				<bool name="Selected">false</bool>
+				<UDim2 name="Size">
+					<XS>0</XS>
+					<XO>16</XO>
+					<YS>0</YS>
+					<YO>16</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<token name="Style">0</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+		<Item class="TextLabel" referent="RBX10">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Color3 name="BackgroundColor3">4294506744</Color3>
+				<float name="BackgroundTransparency">1</float>
+				<Color3 name="BorderColor3">4278190080</Color3>
+				<int name="BorderSizePixel">1</int>
+				<token name="Font">2</token>
+				<token name="FontSize">6</token>
+				<string name="Name">TextLabel</string>
+				<UDim2 name="Position">
+					<XS>0</XS>
+					<XO>4</XO>
+					<YS>0</YS>
+					<YO>0</YO>
+				</UDim2>
+				<UDim2 name="Size">
+					<XS>1</XS>
+					<XO>-5</XO>
+					<YS>0</YS>
+					<YO>16</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<string name="Text">Server Info</string>
+				<Color3 name="TextColor3">4278190080</Color3>
+				<float name="TextTransparency">0</float>
+				<bool name="TextWrap">false</bool>
+				<token name="TextXAlignment">1</token>
+				<token name="TextYAlignment">1</token>
+				<bool name="Visible">true</bool>
+				<int name="ZIndex">1</int>
+				<bool name="archivable">true</bool>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>
