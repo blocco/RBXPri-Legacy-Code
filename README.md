@@ -1,4 +1,4 @@
-RBXPri-Legacy-Code
+RBXPri Legacy Code
 ==================
 
 RBXPri was a way for scripters to escape from the secure environment of vanilla Roblox and become immersed in a contrasting free environment.
