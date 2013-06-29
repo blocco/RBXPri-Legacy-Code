@@ -1,11 +1,11 @@
 --[[
-  The following legacy code is created by blocco.
-	
-	It contains many comments for documentation purposes.
-	It is to be used for educational purposes.
-	
-	This code is from RBXPri (Blocco Edition).
-	This file is "main.lua".
+    The following legacy code is created by blocco.
+    
+    It contains many comments for documentation purposes.
+    It is to be used for educational purposes.
+    
+    This code is from RBXPri (Blocco Edition).
+    This file is "main.lua".
 --]]
 
 -- in case I want people to know what they're using
@@ -13,14 +13,14 @@ local showVersion, versionString=false, "RBXPri Server/Client (Blocco Edition) v
 
 -- robloxLock recursively RobloxLocks objects, no biggie
 function robloxLock(obj)
-	local function lock(nobj)
-		for i, v in pairs(nobj:children()) do
-			v.RobloxLocked=true;
-			lock(v);
-		end
-	end
-	obj.RobloxLocked=true;
-	lock(obj);
+    local function lock(nobj)
+        for i, v in pairs(nobj:children()) do
+            v.RobloxLocked=true;
+            lock(v);
+        end
+    end
+    obj.RobloxLocked=true;
+    lock(obj);
 end
 
 -- This is a sort of Locally Persistent Data set-up.
@@ -30,38 +30,38 @@ RbxData={};
 
 -- nam = name of value, cs = type of value, val = value of value; this creates or overrides data, it returns nothing
 RbxData.SetValue=function(nam, cs, val)
-	local defVals={String=""; Int=0; Number=0; Bool=false; Object=nil}
-	if cs == nil or defVals[cs] == val then
-		if RbxData.GetValue(nam) ~= nil then
-			UserSettings()[nam].Parent = nil
-			for i, v in pairs(rd_clbcks) do v(nam) end
-			return
-		elseif RbxData.GetValue(nam) == nil then
-			for i, v in pairs(rd_clbcks) do v(nam) end
-			return 
-		end
-	end;
-	local valo;
-	if RbxData.GetValue(nam) == nil then
-		valo=Instance.new(cs .. "Value", UserSettings());
-		valo.Name = nam;
-	else
-		valo=UserSettings()[nam];
-	end
-	valo.Value = val;
-	for i, v in pairs(rd_clbcks) do v(nam) end
+    local defVals={String=""; Int=0; Number=0; Bool=false; Object=nil}
+    if cs == nil or defVals[cs] == val then
+        if RbxData.GetValue(nam) ~= nil then
+            UserSettings()[nam].Parent = nil
+            for i, v in pairs(rd_clbcks) do v(nam) end
+            return
+        elseif RbxData.GetValue(nam) == nil then
+            for i, v in pairs(rd_clbcks) do v(nam) end
+            return 
+        end
+    end;
+    local valo;
+    if RbxData.GetValue(nam) == nil then
+        valo=Instance.new(cs .. "Value", UserSettings());
+        valo.Name = nam;
+    else
+        valo=UserSettings()[nam];
+    end
+    valo.Value = val;
+    for i, v in pairs(rd_clbcks) do v(nam) end
 end;
 
 -- this finds the data and returns it
 RbxData.GetValue=function(nam)
-	return UserSettings():FindFirstChild(nam) and UserSettings()[nam].Value or nil;
+    return UserSettings():FindFirstChild(nam) and UserSettings()[nam].Value or nil;
 end;
 
 -- in case you want to know when your data changes
 RbxData.AddChangeCallback=function(fn)
-	if type(fn) ~= "function" then return end;
-	getfenv(fn).disconnect = function() for i, v in pairs(rb_clbcks) do if v == fn then table.remove(rb_clbcks, i) end end end;
-	rd_clbcks[#rd_clbcks+1]=fn;
+    if type(fn) ~= "function" then return end;
+    getfenv(fn).disconnect = function() for i, v in pairs(rb_clbcks) do if v == fn then table.remove(rb_clbcks, i) end end end;
+    rd_clbcks[#rd_clbcks+1]=fn;
 end
 
 -- set up the UI base so that stuff can be put in it
@@ -96,33 +96,34 @@ uiBase.DescendantRemoving:connect(function()robloxLock(uiBase)end)
 
 -- It was neat for me to have showVersion at the top so I didn't have to waste energy scrolling all the way down here
 if showVersion then
-	local versionLabel = Instance.new("TextLabel");
-	versionLabel.Text = versionString;
-	versionLabel.Name = "VersionLabel";
-	versionLabel.Size = UDim2.new(0, 420, 0, 20);
-	versionLabel.Position = UDim2.new(0, 15, 1, -35);
-	versionLabel.BackgroundTransparency = 1;
-	versionLabel.Font = "Arial";
-	versionLabel.FontSize = "Size24";
-	versionLabel.TextXAlignment = "Left";
-	versionLabel.TextTransparency = 0.5;
-	versionLabel.TextColor3 = Color3.new(0.85, 0.85, 0.85)
-	versionLabel.ZIndex = 10;
-	local versionLabelShadow = versionLabel:Clone();
-	versionLabelShadow.Name = "VersionLabelShadow";
-	versionLabelShadow.TextColor3 = Color3.new(0, 0, 0);
-	versionLabelShadow.TextTransparency = 0.9;
-	versionLabelShadow.Position = UDim2.new(0, 2, 0, 2);
-	versionLabelShadow.Parent = versionLabel;
-	versionLabel.Parent = uiBase;
-	versionLabelShadow.ZIndex = 9;
-	
-	versionLabel.MouseEnter:connect(function()
-		versionLabel.TextTransparency = 0.1;
-		versionLabelShadow.TextTransparency = 0.6;
-	end)
-	versionLabel.MouseLeave:connect(function()
-		versionLabel.TextTransparency = 0.5;
-		versionLabelShadow.TextTransparency = 0.9;
-	end)
+    local versionLabel = Instance.new("TextLabel");
+    versionLabel.Text = versionString;
+    versionLabel.Name = "VersionLabel";
+    versionLabel.Size = UDim2.new(0, 420, 0, 20);
+    versionLabel.Position = UDim2.new(0, 15, 1, -35);
+    versionLabel.BackgroundTransparency = 1;
+    versionLabel.Font = "Arial";
+    versionLabel.FontSize = "Size24";
+    versionLabel.TextXAlignment = "Left";
+    versionLabel.TextTransparency = 0.5;
+    versionLabel.TextColor3 = Color3.new(0.85, 0.85, 0.85)
+    versionLabel.ZIndex = 10;
+    local versionLabelShadow = versionLabel:Clone();
+    versionLabelShadow.Name = "VersionLabelShadow";
+    versionLabelShadow.TextColor3 = Color3.new(0, 0, 0);
+    versionLabelShadow.TextTransparency = 0.9;
+    versionLabelShadow.Position = UDim2.new(0, 2, 0, 2);
+    versionLabelShadow.Parent = versionLabel;
+    versionLabel.Parent = uiBase;
+    versionLabelShadow.ZIndex = 9;
+    
+    -- aesthetics were always important to me
+    versionLabel.MouseEnter:connect(function()
+        versionLabel.TextTransparency = 0.1;
+        versionLabelShadow.TextTransparency = 0.6;
+    end)
+    versionLabel.MouseLeave:connect(function()
+        versionLabel.TextTransparency = 0.5;
+        versionLabelShadow.TextTransparency = 0.9;
+    end)
 end
